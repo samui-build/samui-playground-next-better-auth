@@ -3,6 +3,8 @@ import { prisma } from '@/lib/prisma.server'
 import { revalidatePath } from 'next/cache'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 export default async function Users() {
   const users = await prisma.user.findMany({
     orderBy: { createdAt: 'desc' },
