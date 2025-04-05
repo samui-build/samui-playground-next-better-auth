@@ -16,6 +16,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           </Link>
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/users">Users</Link>
         </div>
         <ThemeSelect />
       </header>
